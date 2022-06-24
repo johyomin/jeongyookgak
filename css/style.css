@@ -1,0 +1,478 @@
+@charset 'utf-8';
+@import url("//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+
+.spoka * {
+  font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-style: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Spoqa Han Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: -0.32px;
+  line-height: 1.4;
+  color: #888;
+}
+
+/* 공통(재사용) */
+.inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+/* float를 해제 */
+.clearfix::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.pop-close {
+  display: none;
+}
+
+.pop {
+  position: relative;
+  display: block;
+  background-image: radial-gradient(circle at 50% 527%, #ff896a, #e23000 119%);
+  width: 100%;
+  min-width: 1184px;
+  height: 60px;
+}
+
+
+
+/* header */
+.header {
+  position: sticky;
+  top:0;
+  display: block;
+  background-color: #000000;
+  width: 100%;
+  min-width: 1184px;
+  height: 96px;
+  z-index: 888;
+}
+
+
+.header .gnb-left {
+  position: relative;
+  display: block;
+  width: 50%;
+  height: 96px;
+}
+
+.header .gnb-left .logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0%;
+  display: inline-block;
+  width: 129px;
+  height: 48px;
+  background: url('../images/logo.svg') no-repeat center;
+  background-size: contain;
+  font-size: 0;
+}
+
+.header .gnb-left .shopping {
+  position: absolute;
+  display: block;
+  transform: translateY(-50%);
+  right: 28%;
+  bottom: 23%;
+}
+
+.header .gnb-left .shopping li {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.header .gnb-left .shopping li a {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+  margin-right: 24px;
+}
+
+.header .gnb-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 96px;
+  display: block;
+  /* border :1px solid red; */
+}
+
+.header .gnb-inner-left {
+  position: relative;
+  display: block;
+  height: 100%;
+  /* border :1px solid yellow; */
+}
+
+.header .gnb-right .notice {
+  position: absolute;
+  right: 120px;
+  top: 42px;
+  display: block;
+  float: left;
+  /* border: 5px solid yellowgreen; */
+}
+
+.header .gnb-right .notice li {
+  position: relative;
+  display: block;
+  float: left;
+
+}
+
+.header .gnb-right .notice li a {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  margin: 0 7px;
+}
+
+.header .gnb-right .notice .line {
+  background-color: #fff;
+  width: 1px;
+  height: 12px;
+  margin: 4px 12px;
+}
+
+.header .gnb-right .basket {
+  display: block;
+  position: absolute;
+  top: 25px;
+  right: 55px;
+  background: url('../images/장바구니.svg') no-repeat center;
+  background-size: cover;
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin-left: 15px;
+}
+
+.header .gnb-right .menu {
+  display: block;
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  background: url('../images/전체보기.svg') no-repeat center;
+  background-size: cover;
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin-left: 2px;
+}
+
+
+/* visual */
+.visual {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 1184px;
+  height: 560px;
+}
+
+.gallery {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 1184px;
+  height: 560px;
+  background: url('../images/visual.png') no-repeat center;
+  background-size: cover;
+  font-size: 0;
+}
+
+/* event */
+.event {
+  position: relative;
+  display: block;
+  margin-top: 50px;
+  height: 176px;
+
+}
+
+.event-left {
+  position: relative;
+  display: block;
+  float: left;
+  width: 50%;
+  height: 176px;
+
+}
+
+.event .inner .event-left .event1 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 176px;
+  background: url('../images/banner1.png') no-repeat center;
+  background-size: cover;
+}
+
+.event-right {
+  position: relative;
+  display: block;
+  float: left;
+  width: 50%;
+  height: 176px;
+}
+
+.event-right>a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../images/delivery.png') no-repeat center;
+  background-size: cover;
+  font-size: 0;
+}
+
+/* items */
+.items {
+  position: relative;
+  display: block;
+  margin-top: 90px;
+
+}
+
+.items .inner h5 {
+  position: relative;
+  display: block;
+  font-size: 32px;
+  color: #000;
+  margin-bottom: -32px;
+  /* border: 3px solid red; */
+}
+
+.items .inner .best-items {
+  position: relative;
+  display: block;
+  height: 1032px;
+  width: 100%;
+  /* border: 3px solid blue; */
+}
+
+.items .inner .best-items li {
+  position: relative;
+  display: block;
+  width: 376px;
+  height: 416px;
+  float: left;
+  /* border: 3px solid yellow; */
+  margin-bottom: 120px;
+}
+
+.items .inner .best-items li:nth-child(2),
+.items .inner .best-items li:nth-child(5) {
+  margin: 0 25px;
+
+}
+
+.items .inner .best-items .depth1 {
+  position: relative;
+  display: block;
+}
+
+.items .inner .best-items .depth1 .meat {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 416px;
+  background-color: #f9f7f8;
+  /* border: 3px solid red; */
+}
+
+.items .inner .best-items .depth1 .meat img {
+  position: relative;
+  display: block;
+  width: 276px;
+  height: 276px;
+  margin: 70px 0 0 50px;
+}
+
+.items .inner .best-items .depth1 .meat-basket {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  display: block;
+  width: 72px;
+  height: 72px;
+  box-shadow: 0 25px 10px -15px rgb(0 0 0 / 12%);
+  border: 2px solid #eee;
+  border-radius: 50%;
+  background-color: #fff;
+  background: url('../images/담기.svg') no-repeat center;
+  background-size: cover;
+}
+
+.items .inner .best-items .depth1 .meat-basket img {
+  position: relative;
+  display: block;
+  width: 68px;
+  height: 68px;
+}
+
+.items .inner .best-items .depth1 .meat-basket:hover {
+  background: url('../images/white-cart.svg') no-repeat center;
+  background-size: cover;
+  background-color: #000;
+}
+
+.items .inner .best-items .depth1 .antibiotic {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: block;
+}
+
+.items .inner .best-items .depth1 .antibiotic  img {
+  position: relative;
+  display: block;
+  width: 75px;
+  height: 30px;
+}
+
+.items .inner .best-items .depth2 {
+  position: relative;
+  display: block;
+}
+
+
+.items .inner .best-items .depth2 h6 {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.items .inner .best-items .depth2 p {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  color: #9b9b9b;
+
+}
+
+/* banner */
+.banner {
+  position: relative;
+  display: block;
+}
+
+.banner .inner a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 208px;
+  background: url('../images/go-shopping.png') no-repeat center;
+  background-size: contain;
+  margin: 150px 0;
+}
+
+/* footer */
+.footer {
+  position: relative;
+  display: block;
+}
+
+.footer-line {
+  position: relative;
+  display: block;
+  border-top: 1px solid #bdbdbd;
+  border-bottom: 1px solid #eee;
+}
+
+.footer-depth1 {
+  position: relative;
+  display: block;
+}
+
+.footer-depth1 .inner .footer-depth1-left {
+  position: relative;
+  display: block;
+  float: left;
+  width: 50%;
+  height: 64px;
+
+
+
+  border: 3px solid red;
+
+}
+
+.footer-depth1 .inner .footer-depth1-left li {
+  position: relative;
+  display: block;
+  float: left;
+  border: 3px solid blue;
+  
+}
+
+.footer-depth1 .inner .footer-depth1-left li a {
+  position: relative;
+  display: block;
+  margin-right: 23px;
+  font-size: 14px;
+  margin-top: 10px;
+
+}
+
+.footer-depth1 .inner .footer-depth1-right {
+  position: relative;
+  display: block;
+  float: right;
+}
+
+.footer-depth1 .inner .footer-depth1-right li {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+
+.footer-depth1 .inner .footer-depth1-right li a {
+  position: relative;
+  display: block;
+}

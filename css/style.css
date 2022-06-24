@@ -76,7 +76,7 @@ body {
 /* header */
 .header {
   position: sticky;
-  top:0;
+  top: 0;
   display: block;
   background-color: #000000;
   width: 100%;
@@ -241,14 +241,67 @@ body {
 
 }
 
-.event .inner .event-left .event1 {
+.swiper-wrapper .swiper-slide a {
   position: relative;
   display: block;
   width: 100%;
   height: 176px;
+}
+
+.swiper-wrapper .swiper-slide .sw-visual-1 {
   background: url('../images/banner1.png') no-repeat center;
   background-size: cover;
 }
+
+.swiper-wrapper .swiper-slide .sw-visual-2 {
+  background: url('../images/banner2.png') no-repeat center;
+  background-size: cover;
+}
+
+.swiper-wrapper .swiper-slide .sw-visual-3 {
+  background: url('../images/banner3.png') no-repeat center;
+  background-size: cover;
+}
+
+.swiper-wrapper .swiper-slide .sw-visual-4 {
+  background: url('../images/banner4.png') no-repeat center;
+  background-size: cover;
+}
+
+.swiper-wrapper .swiper-slide .sw-visual-5 {
+  background: url('../images/banner5.png') no-repeat center;
+  background-size: cover;
+}
+
+.swiper-wrapper .swiper-slide .sw-visual-6 {
+  background: url('../images/banner6.png') no-repeat center;
+  background-size: cover;
+}
+
+.swiper-wrapper .swiper-slide .sw-visual-7 {
+  background: url('../images/banner7.png') no-repeat center;
+  background-size: cover;
+}
+
+/* swiper button */
+.sw-visual-prev {
+  position: relative;
+  display: block;
+}
+
+
+.sw-visual-next {
+  position: relative;
+  display: block;
+}
+
+
+.sw-visual-pg {
+  position: relative;
+  display: block;
+}
+
+
 
 .event-right {
   position: relative;
@@ -366,7 +419,7 @@ body {
   display: block;
 }
 
-.items .inner .best-items .depth1 .antibiotic  img {
+.items .inner .best-items .depth1 .antibiotic img {
   position: relative;
   display: block;
   width: 75px;
@@ -436,18 +489,14 @@ body {
   width: 50%;
   height: 64px;
 
-
-
-  border: 3px solid red;
-
 }
 
 .footer-depth1 .inner .footer-depth1-left li {
   position: relative;
   display: block;
   float: left;
-  border: 3px solid blue;
-  
+  margin-top: 25px;
+
 }
 
 .footer-depth1 .inner .footer-depth1-left li a {
@@ -455,8 +504,6 @@ body {
   display: block;
   margin-right: 23px;
   font-size: 14px;
-  margin-top: 10px;
-
 }
 
 .footer-depth1 .inner .footer-depth1-right {
@@ -475,4 +522,87 @@ body {
 .footer-depth1 .inner .footer-depth1-right li a {
   position: relative;
   display: block;
+}
+
+.footer-depth1 .inner .footer-depth1-right .app {
+  position: relative;
+  width: 128px;
+  height: 40px;
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  background: url('../images/앱설치.svg') no-repeat left;
+  background-size: contain;
+  font-size: 13px;
+  text-align: right;
+  color: #212121;
+  letter-spacing: -.41px;
+  padding: 8px 10px;
+  margin: 12px 10px;
+}
+
+
+.footer-depth1 .inner .footer-depth1-right .kakao {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: url('../images/kakao.svg') no-repeat center;
+  background-size: contain;
+  margin: 17px 10px;
+}
+
+
+.footer-depth1 .inner .footer-depth1-right .insta {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: url('../images/insta.svg') no-repeat center;
+  background-size: contain;
+  margin: 17px 10px;
+}
+
+.footer-depth2 {
+  position: relative;
+  display: block;
+  padding: 30px 0;
+}
+
+
+.footer-depth2 .footer-depth2-left {
+  position: relative;
+  display: block;
+  color:#212121;
+  float: left;
+}
+
+
+.footer-depth2 .footer-depth2-left img {
+  position: relative;
+  display: block;
+  width: 82px;
+  height: 32px;
+}
+
+.footer-depth2 .footer-depth2-left .copyright {
+  position: relative;
+  display: block;
+  color:#212121;
+  font-size: 13px;
+  margin: 0 8px;
+
+}
+
+.footer-depth2 .footer-depth2-left .copyright .find{
+  color: #4BB8CE;
+}
+
+
+.footer-depth2 .footer-depth2-right {
+  position: relative;
+  display: block;
+  float: right;
 }

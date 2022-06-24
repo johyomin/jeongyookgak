@@ -11,5 +11,24 @@ $(document).ready(function(){
 });
 
 window.onload = function(){
-
 };
+
+// swiper
+new Swiper('.event-left', {
+  loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    prevEl: '.sw-visual-prev',
+    nextEl: '.sw-visual-next'
+  },
+
+  pagination: {
+    el: '.sw-visual-pg',
+    type: 'fraction'
+  }
+});
+

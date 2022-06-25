@@ -533,12 +533,11 @@ body {
   border-radius: 4px;
   cursor: pointer;
   display: block;
-  background: url('../images/앱설치.svg') no-repeat left;
-  background-size: contain;
   font-size: 13px;
   text-align: right;
   color: #212121;
   letter-spacing: -.41px;
+  line-height: 15px;
   padding: 8px 10px;
   margin: 12px 10px;
 }
@@ -568,32 +567,58 @@ body {
 .footer-depth2 {
   position: relative;
   display: block;
-  padding: 30px 0;
+  padding: 10px 0 0 0;
 }
 
+.footer-depth2 .inner {
+  position: relative;
+  display: block;
+}
 
 .footer-depth2 .footer-depth2-left {
   position: relative;
   display: block;
   color:#212121;
   float: left;
+  width: 50%;
 }
 
 
 .footer-depth2 .footer-depth2-left img {
-  position: relative;
+  position: absolute;
+  top: 10px;
+  left: 0;
   display: block;
   width: 82px;
   height: 32px;
 }
 
 .footer-depth2 .footer-depth2-left .copyright {
-  position: relative;
+  position: absolute;
+  top: 50px;
+  left: 0;
   display: block;
   color:#212121;
   font-size: 13px;
-  margin: 0 8px;
+}
 
+.footer-depth2 .footer-depth2-left .copyright p {
+  position: relative;
+  display: block;
+  margin: 6px 6px 6px 0;
+}
+
+.footer-depth2 .footer-depth2-left .copyright p:last-child {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.footer-depth2 .footer-depth2-left .copyright span {
+  position: relative;
+  margin: 0 5px;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 300;
 }
 
 .footer-depth2 .footer-depth2-left .copyright .find{
@@ -605,4 +630,63 @@ body {
   position: relative;
   display: block;
   float: right;
+}
+
+.footer-depth2 .footer-depth2-right h6 {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  text-align: right;
+  line-height: 14px;
+}
+
+.footer-depth2 .footer-depth2-right h3 {
+  position: relative;
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  text-align: right;
+  line-height: 24px;
+}
+
+.footer-depth2 .footer-depth2-right p {
+  position: relative;
+  display: block;
+  text-align: right;
+}
+
+.footer-depth2 .footer-depth2-right .call {
+  position: relative;
+  display: block;
+  margin: 10px 0;
+}
+
+.footer-depth2 .footer-depth2-right .call>p {
+  font-size: 13px;
+  line-height: 13px;
+  color:#000000;
+  margin: 8px 0;
+}
+
+.footer-depth2 .footer-depth2-right .call>p>a {
+  color: #4BB8CE;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.footer-depth2 .footer-depth2-right button {
+  position: relative;
+  display: block;
+  float: left;
+  width: 88px;
+  height: 32px;
+  border: 1px solid #212121;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  margin: 3px 0px 3px 10px;
 }

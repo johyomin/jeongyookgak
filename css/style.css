@@ -59,7 +59,14 @@ body {
 }
 
 .pop-close {
-  display: none;
+  position: absolute;
+  right: 13px;
+  top: 22px;
+  display: block;
+  width: 45px;
+  height: 20px;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .pop {
@@ -283,20 +290,26 @@ body {
   background-size: cover;
 }
 
+.event-left-cotrol {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+}
+
 /* swiper button */
-.sw-visual-prev {
+.event-left-prev {
+  position: relative;
+  display: block;
+}
+
+.event-left-next {
   position: relative;
   display: block;
 }
 
 
-.sw-visual-next {
-  position: relative;
-  display: block;
-}
-
-
-.sw-visual-pg {
+.event-left-pg {
   position: relative;
   display: block;
 }
@@ -578,7 +591,7 @@ body {
 .footer-depth2 .footer-depth2-left {
   position: relative;
   display: block;
-  color:#212121;
+  color: #212121;
   float: left;
   width: 50%;
 }
@@ -598,7 +611,7 @@ body {
   top: 50px;
   left: 0;
   display: block;
-  color:#212121;
+  color: #212121;
   font-size: 13px;
 }
 
@@ -621,7 +634,7 @@ body {
   font-weight: 300;
 }
 
-.footer-depth2 .footer-depth2-left .copyright .find{
+.footer-depth2 .footer-depth2-left .copyright .find {
   color: #4BB8CE;
 }
 
@@ -667,7 +680,7 @@ body {
 .footer-depth2 .footer-depth2-right .call>p {
   font-size: 13px;
   line-height: 13px;
-  color:#000000;
+  color: #000000;
   margin: 8px 0;
 }
 

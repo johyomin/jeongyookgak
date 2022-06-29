@@ -290,30 +290,60 @@ body {
   background-size: cover;
 }
 
-.event-left-cotrol {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 9;
-}
 
 /* swiper button */
+.event-left-cotrol {
+  position: absolute;
+  left: 8px;
+  top: 136px;
+  z-index: 9;
+  width: 103px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 2px;
+
+}
+
+
 .event-left-prev {
-  position: relative;
+  position: absolute;
+  left: 0;
+  bottom: 23%;
   display: block;
+  background: url('../images/swiper-button.svg') no-repeat center;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border: 0;
+  transform: rotate(180deg);
+  z-index: 99;
 }
-
-.event-left-next {
-  position: relative;
-  display: block;
-}
-
 
 .event-left-pg {
   position: relative;
-  display: block;
+  margin-top: 16px;
+  font-size: 13px;
+  line-height: 14px;
+  width: 50px;
+  text-align: center;
 }
 
+
+.event-left-next {
+  position: absolute;
+  right: 0;
+  bottom: 23%;
+  display: block;
+  background: url('../images/swiper-button.svg') no-repeat center;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border: 0;
+  z-index: 99;
+}
 
 
 .event-right {
@@ -333,6 +363,16 @@ body {
   background-size: cover;
   font-size: 0;
 }
+
+
+/* event 반응형 */
+@media all and (max-width: 1190px) {
+  .event-left {
+  
+  }
+}
+
+
 
 /* items */
 .items {

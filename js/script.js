@@ -41,6 +41,7 @@ window.onload = function () {
   // swiper
   new Swiper('.event-left', {
     speed: 1000,
+    loop: true,
     navigation: {
       prevEl: '.event-left-prev',
       nextEl: '.event-left-next'
